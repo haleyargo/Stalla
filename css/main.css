@@ -189,6 +189,10 @@ span{
   right: 50px;
   z-index: -1;
 }
+
+img {
+  top: 20px;
+}
 .form {
   background-color: ;
   position: static;
