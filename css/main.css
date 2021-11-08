@@ -94,6 +94,8 @@ textarea {
    ========================================================================== */
 body {
   display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   height: 100vh;
   background-color: #AACC00;
   padding: 64px;
@@ -315,8 +317,146 @@ form h1{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 375px) {
+  *{
+    box-sizing: border-box;
+  }
+
+  body{
+    height: 100vh;
+    padding: 64px;
+  }
+
+  .content{
+      height: 100%;
+      width: 100%;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr;
+      grid-gap: 64px;
+      border-style: solid;
+      border-color: #FFFAFF;
+      border-width: 8px;
+      padding: 0px;
+    }
+
+.right{
+  grid-row: 1;
+}
+
+.form{
+  grid-row: 2;
+}
+
+    .right h1{ 
+  font-family: manofa,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFAFF;
+  font-size: 11rem;
+  display: block;
+}
+
+span{
+  color: #5C5C62;
+  font-weight: 200;
+  letter-spacing: 4px;
+  font-size: 2rem;
+  display: block;
+}
+
+.content h2{
+  font-family: manofa,sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2rem;
+  color: #2A2B2E;
+}
+
+.circle{
+  background-color: #D4D700;
+  border-radius: 50%;
+  height: 680px;
+  width: 680px;
+  position: absolute;
+  top: 45px;
+  left: 20px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.circle2{
+  background-color: transparent;
+  border-style: solid;
+  border-color: #80B918;
+  border-width: 8px;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top:40px;
+  right:px;
+  z-index: -1;
+}
+
+.circle3{
+  background-color: transparent;
+  border-style: solid;
+  border-color: #80B918;
+  border-width: 8px;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top:100px;
+  right: 450px;
+  z-index: -1;
+}
+
+.circle4{
+  background-color: #80B918;
+  border-style: none;
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+  position: absolute;
+  top:px;
+  right: px;
+  z-index: -1;
+}
+
+img {
+  background-color: red;
+}
+
+button, input, optgroup, select, textarea{
+  border-style: none;
+  padding-bottom: 4px;
+  border-bottom: 3px solid #FFFAFF;
+}
+
+input, optgroup, select, textarea{
+  color: #5A5A66;
+  font-weight: 200;
+  letter-spacing: 2px;
+  background-color: transparent;
+  width: 75%;
+}
+
+button{
+  background: transparent;
+  color: #80B918;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+
+form h1{
+  color: #2A2B2E;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+}
 }
 
 @media print,
