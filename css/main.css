@@ -381,18 +381,20 @@ form h1{
 
   .section2{
     grid-row: 2;
-    padding: 0;
+    grid-column: 2;
+    padding-top: 220px;
+
   }
 
   .form-input{
-    width: 50%;
+    padding-top: 10px;
   }
 
 
 img {
   position: absolute;
-  top: 500px;
-  left: 125px;
+  top: 450px;
+  left: 120px;
   height: 150px;
   width: 150px;
 }
@@ -409,16 +411,16 @@ input, optgroup, select, textarea{
   font-weight: 200;
   letter-spacing: 2px;
   background-color: transparent;
-  font-size: 4vw;
-  width: 75%;
+  font-size: 3.5vw;
 }
 
 button{
   background: transparent;
   color: #80B918;
-  font-size: 4vw;
+  font-size: 3vw;
   letter-spacing: 4px;
   font-weight: 600;
+  display: inline-block;
 }
 
 form h1{
@@ -426,6 +428,7 @@ form h1{
   font-weight: 600;
   font-size: 4vw;
   letter-spacing: 4px;
+  margin: 0;
 }
 .circle{
   height: 100vw;
