@@ -88,7 +88,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-@media screen and (min-width: 40em) {
 
 *{
   box-sizing: border-box;
@@ -129,20 +128,24 @@ body {
   grid-row: 1;
 }
 
+.section2 h1{
+  font-size: 1.8vw;
+}
+
 .right h1{  
   font-family: manofa,sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #FFFAFF;
-  font-size: 12.5vw;
-  display: block;
+  text-align: center;
+  font-size: 14vw;
 }
 
 span{
   color: #5C5C62;
   font-weight: 200;
   letter-spacing: 4px;
-  font-size: 2rem;
+  font-size: 2.5vw;
   display: block;
 }
 
@@ -244,7 +247,7 @@ form h1{
   font-size: 1.5rem;
   letter-spacing: 4px;
 }
-}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -333,118 +336,56 @@ form h1{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (max-width: 768px) {
-  *{
-  box-sizing: border-box;
-  font-family: arponasans,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-  
+@media screen and (max-width: 812px) {
 
-  body{
-    background-color: #AACC00;
-    padding: 16px;
-    width: 100%;
+  body {
+    height: 100vh;
+    padding: 32px;
   }
 
   .content{
-      border-style: solid;
-      border-color: #FFFAFF;
-      border-width: 8px;
-      padding: 8px;
-    }
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0;
+    padding: 8px;
+    grid-gap: 0;
+    justify-items: start;
+  }
+  
+  .section2 h1 {
+    font-size: 3vw;
+  }
 
-  .right h1{ 
-    font-family: manofa,sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #FFFAFF;
-    font-size: 30vw;
-    text-align: center;
-}
+  .right{
+    grid-row: 1;
+    grid-column: 0;
+  }
 
-.right h2{
-  font-size: 5vw;
-  text-align: center;
-}
-span{
-  color: #5C5C62;
-  font-weight: 200;
-  letter-spacing: 4px;
-  font-size: 4vw;
-  display: block;
-}
+  .right h1{
+    justify-self: center;
+    font-size: 19vw;
+  }
 
-.content h2{
-  font-family: manofa,sans-serif;
-  font-weight: 400;
-  font-style: italic;
-  color: #2A2B2E;
-}
+  .right h2{
+    font-size: 5vw;
+  }
 
-.section2 h1{
-  font-size: 4.5vw;
-  letter-spacing: 2px;
-  text-align: center;
-}
-.circle{
-  background-color: #D4D700;
-  border-radius: 50%;
-  position: absolute;
-  height: 100vw;
-  width: 100vw;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: -1;
-}
+  .section2{
+    grid-row: 2;
+    grid-column: 0;
+  }
 
-.circle2{
-  background-color: transparent;
-  border-style: solid;
-  border-color: #80B918;
-  border-width: 8px;
-  border-radius: 50%;
-  position: absolute;
-  height: 15vw;
-  width: 15vw;
-  top: 300px;
-  left:30px;
-  z-index: -1;
-}
+  .form-input{
+    width: 50%;
+  }
 
-.circle3{
-  background-color: transparent;
-  border-style: solid;
-  border-color: #80B918;
-  border-width: 8px;
-  border-radius: 50%;
-  position: absolute;
-  height: 40vw;
-  width: 40vw;
-  top:300px;
-  left: 40px;
-  z-index: -1;
-}
-
-.circle4{
-  background-color: #80B918;
-  border-style: none;
-  border-radius: 50%;
-  position: absolute;
-  height: 90vw;
-  width: 90vw;
-  top:-60px;
-  right:-20px;
-  z-index: -1;
-}
 
 img {
-  height: 80vw;
-  width: 80vw;
-  align-self: center;
+  top: 0;
+  justify-self: flex-start;
+  align-self: flex-start;
 }
+
 
 button, input, optgroup, select, textarea{
   border-style: none;
@@ -457,13 +398,14 @@ input, optgroup, select, textarea{
   font-weight: 200;
   letter-spacing: 2px;
   background-color: transparent;
-  width: 60%;
+  font-size: 4vw;
+  width: 75%;
 }
 
 button{
   background: transparent;
   color: #80B918;
-  font-size: 1rem;
+  font-size: 4vw;
   letter-spacing: 4px;
   font-weight: 600;
 }
@@ -471,8 +413,35 @@ button{
 form h1{
   color: #2A2B2E;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 4vw;
   letter-spacing: 4px;
+}
+.circle{
+  height: 100vw;
+  width: 100vw;
+  top: 450px;
+  left: 20px;
+}
+
+.circle2{
+  height:100vw;
+  width: 100vw;
+  top:40px;
+  right: 450px;
+}
+
+.circle3{
+  height: 100vw;
+  width: 100vw;
+  top:0;
+  right:0;
+}
+
+.circle4{
+  height: 30vw;
+  width: 30vw;
+  top:0;
+  right: 0;
 }
 }
 
