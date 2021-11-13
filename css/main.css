@@ -253,6 +253,9 @@ form h1{
   letter-spacing: 4px;
 }
 
+.circles{
+  overflow: hidden;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -355,6 +358,7 @@ form h1{
     padding: 8px;
     grid-gap: 0;
     justify-items: start;
+    overflow: hidden;
   }
   
   .section2 h1 {
@@ -377,7 +381,7 @@ form h1{
 
   .section2{
     grid-row: 2;
-    grid-column: 0;
+    padding: 0;
   }
 
   .form-input{
@@ -386,9 +390,11 @@ form h1{
 
 
 img {
-  top: 0;
-  justify-self: flex-start;
-  align-self: flex-start;
+  position: absolute;
+  top: 500px;
+  left: 125px;
+  height: 150px;
+  width: 150px;
 }
 
 
@@ -424,15 +430,16 @@ form h1{
 .circle{
   height: 100vw;
   width: 100vw;
-  top: 450px;
-  left: 20px;
+  top: 400px;
+  left: 0px;
+  overflow: hidden;
 }
 
 .circle2{
-  height:100vw;
-  width: 100vw;
-  top:40px;
-  right: 450px;
+  height:10vw;
+  width: 10vw;
+  top:400px;
+  right: 10 0px;
 }
 
 .circle3{
@@ -445,8 +452,8 @@ form h1{
 .circle4{
   height: 30vw;
   width: 30vw;
-  top:0;
-  right: 0;
+  top:10px;
+  right: 90;
 }
 }
 
