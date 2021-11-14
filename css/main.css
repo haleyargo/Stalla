@@ -323,23 +323,28 @@ form h1{
    Modify as content requires.
    ========================================================================== */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   
   body{
     padding: 32px;
   }
   .content{
     grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr ;
     padding: 16px;
-    height: 100vh;
+    height: 100%;
+    object-fit: contain;
   }
 
   .right{
     grid-row: 1;
     grid-column: 1 / span 2;
+
   }
   .section2{
+    grid-row: 2;
     grid-column: 1 / span 2;
+    padding: 0;
   }
 
   .right h1{  
@@ -347,14 +352,11 @@ form h1{
   font-weight: 400;
   font-style: normal;
   color: #FFFAFF;
-  text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
   margin: 0;
-  padding-bottom: 100px;
-  }
+}
   
   .right h2{
-    padding-top: 100px;
     font-size: 15px;
   }
 
@@ -399,14 +401,12 @@ form h1{
 }
 
 form{
-  padding-top: 200px;
 }
   button, input, optgroup, select, textarea{
     border-style: none;
     padding-bottom: 4px;
     border-bottom: 3px solid #FFFAFF;
     vertical-align: baseline;
-    padding-top: 20px;
 
   }
 
